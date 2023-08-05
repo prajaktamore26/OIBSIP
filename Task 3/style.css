@@ -1,0 +1,87 @@
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background:linear-gradient(145deg,#587B7F,#587B7F); 
+	padding: 10px;
+}
+.todo{
+	width:100%;
+	max-width: 650px;
+	padding: 40px 30px 70px;
+	background: linear-gradient(135deg,#E2C044,#E2C044);
+	margin:100px auto 20px;
+	border-radius: 10px;
+}
+.todo h2{
+		color:#002765;
+        align-items: center;
+		display: flex;
+		margin-bottom: 20px;
+		
+}
+.todo h2 img{
+	height:35px ;
+	width: 40px;
+	margin-left: 2px;
+}
+.input button{
+	border-radius: 20px;
+	height: 30px;
+	
+}
+#add{
+	border-radius: 20px;
+	width: 88%;
+	height: 24px;
+}
+.input{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	border: none;
+	outline: none;
+	padding:10px;
+	font-weight:14px;
+}
+ul li{
+    list-style: none;
+	font-size: 18px;
+	padding: 12px 8px 12x 50px;
+	user-select: none;
+	cursor: pointer;
+	 position: relative; 
+}
+ul li::before{
+    position: absolute; 
+	content: '';
+	background-image: url(c.png);
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	top: 12px;
+	left: -32px;
+
+}
+ul li.tick{
+	color:rgb(8, 8, 8);
+	text-decoration: line-through;
+}
+ul li.tick::before{
+	background-image: url(cc.png);
+}
+ul li span{
+	 position: relative; 
+	/* display: flex; */
+	/* flex-direction: column; */
+	margin-left: 429px;
+	height: 45px;
+	width:10px;
+	color: #000000f3;
+	font-size: 29px;
+	border-radius: 50%;
+	text-align: center;
+}
